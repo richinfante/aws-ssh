@@ -1,0 +1,9 @@
+[flake8]
+indent-size = 2
+ignore=
+  E111, E114, # indentation rules
+  E302, # two-blank-lines around defs. ignored due to non-docblock comments breaking.
+  E128, E121, E124 # ignore continued indentation rules; they're ugly.
+max-line-length = 160
+exclude = tests/*, python_modules/*, node_modules/*, admin/node_modules/*, platform/node_modules/*, admin/mogwai/*, admin/tests/*, platform/tests/*, common/tests/*, api/tests/*
+max-complexity = 10
